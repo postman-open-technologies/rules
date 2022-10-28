@@ -43,9 +43,6 @@ exports.handler = vandium.generic()
     if(search != ''){
        sql += " AND b.name LIKE '%" + search + "%'";
     }
-    if(rule != ''){
-       sql += " AND id IN(SELECT rule_id FROM rules_rules WHERE rule_id IN(SELECT id FROM rules WHERE name = '" + rule + "'))";
-    }   
     if(tags != ''){
        sql += " AND id IN(SELECT rule_id FROM rules_tags WHERE tag_id IN(SELECT id FROM tags WHERE name IN ('" + tags.replace(",","','") + "')))";
     }     
