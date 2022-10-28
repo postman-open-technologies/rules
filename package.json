@@ -1,0 +1,12 @@
+{
+  "name": "Rules",
+  "version": "1.0.0",
+  "description": "This is for managing rules.",
+  "main": "index.js",
+  "dependencies": {
+    "vandium": "*",
+    "mysql": "*",
+    "async": "*",
+    "pool": "*"
+  }
+}
